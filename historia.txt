@@ -1,0 +1,55 @@
+commit 66fa477971702e9b1f22d8e6d02382e49875abd9
+Author: michal <michal.dbro@gmail.com>
+Date:   Tue Apr 15 11:37:27 2025 +0200
+
+    dodalem pliki zwrotek i refrenu
+
+commit fadfc01131b9a46ec1bd8431280af9e327e0c927
+Author: michal <michal.dbro@gmail.com>
+Date:   Tue Apr 15 11:30:28 2025 +0200
+
+    zastapilem druga zwrotke nazwa pliku
+
+commit 52c0b24182ce54fc9e1152e96bf60a7ed76fd934
+Author: michal <michal.dbro@gmail.com>
+Date:   Tue Apr 15 11:27:39 2025 +0200
+
+    Revert "usunalem linijke refrenu"
+    
+    This reverts commit 058b132aa8ac66130635959018e7942a311a5c84.
+
+commit 058b132aa8ac66130635959018e7942a311a5c84
+Author: michal <michal.dbro@gmail.com>
+Date:   Tue Apr 15 11:25:00 2025 +0200
+
+    usunalem linijke refrenu
+
+commit cc372b35df7a052dd6b783078a10bbc1bbb5a438
+Author: michal <michal.dbro@gmail.com>
+Date:   Tue Apr 15 11:22:32 2025 +0200
+
+    przenioslem tekst refrenu do pliku refren2.txt
+
+commit ca081fae31358bbb6c29496d3bb8d687c4c22388
+Author: michal <michal.dbro@gmail.com>
+Date:   Tue Apr 15 11:21:21 2025 +0200
+
+    przenioslem tekst zwrotki 3 do pliku zwrotka3.txt
+
+commit 4ef7c3d5490f7480cea8575a297baf5acea2bdf1
+Author: michal <michal.dbro@gmail.com>
+Date:   Tue Apr 15 11:20:45 2025 +0200
+
+    przenioslem tekst zwrotki 2 do pliku zwrotka2.txt
+
+commit b313d4b8a2310172a82afc2c153b4244bb397ea2
+Author: michal <michal.dbro@gmail.com>
+Date:   Tue Apr 15 11:19:47 2025 +0200
+
+    przenioslem tekst zwrotki 1 do pliku zwrotka1.txt
+
+commit 86f31f323fb104947c9163833ef4e4680b773203
+Author: michal <michal.dbro@gmail.com>
+Date:   Tue Apr 15 11:18:00 2025 +0200
+
+    dodanie tekstu do piosenka.txt

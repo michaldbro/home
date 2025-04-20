@@ -1,0 +1,81 @@
+$ git log -p -- refren2.txt
+commit 66fa477971702e9b1f22d8e6d02382e49875abd9 (HEAD -> master)
+Author: michal <michal.dbro@gmail.com>
+Date:   Tue Apr 15 11:37:27 2025 +0200
+
+    dodalem pliki zwrotek i refrenu
+
+diff --git a/refren2.txt b/refren2.txt
+new file mode 100644
+index 0000000..5bdd6d9
+--- /dev/null
++++ b/refren2.txt
+@@ -0,0 +1,4 @@
++O Victorio, moja Victorio
++Dlaczego ,mam cię tylko w snach?
++Wolności moja, ty Victorio
++Opanuj w końcu cały świat
+\ No newline at end of file
+
+Michal@DESKTOP-O89EEFG MINGW64 /c/home/piosenka (master)
+$ git log -p -- zwrotka1.txt
+commit 66fa477971702e9b1f22d8e6d02382e49875abd9 (HEAD -> master)
+Author: michal <michal.dbro@gmail.com>
+Date:   Tue Apr 15 11:37:27 2025 +0200
+
+    dodalem pliki zwrotek i refrenu
+
+diff --git a/zwrotka1.txt b/zwrotka1.txt
+new file mode 100644
+index 0000000..e6ac1ed
+--- /dev/null
++++ b/zwrotka1.txt
+@@ -0,0 +1,4 @@
++Dzisiaj miałem piękny sen
++Naprawdę piękny sen
++Wolności moja śniłem że
++Brałem z tobą ślub
+\ No newline at end of file
+
+Michal@DESKTOP-O89EEFG MINGW64 /c/home/piosenka (master)
+$ git log -p -- zwrotka2.txt
+commit 66fa477971702e9b1f22d8e6d02382e49875abd9 (HEAD -> master)
+Author: michal <michal.dbro@gmail.com>
+Date:   Tue Apr 15 11:37:27 2025 +0200
+
+    dodalem pliki zwrotek i refrenu
+
+diff --git a/zwrotka2.txt b/zwrotka2.txt
+new file mode 100644
+index 0000000..19c983b
+--- /dev/null
++++ b/zwrotka2.txt
+@@ -0,0 +1,4 @@
++Słońce nas błogosławiło
++I Księżyc tez tam był
++Wszystkie gwiazdy nieba
++Wszystkie gwiazdy pod
+\ No newline at end of file
+
+Michal@DESKTOP-O89EEFG MINGW64 /c/home/piosenka (master)
+$ git log -p -- zwrotka3.txt
+commit 66fa477971702e9b1f22d8e6d02382e49875abd9 (HEAD -> master)
+Author: michal <michal.dbro@gmail.com>
+Date:   Tue Apr 15 11:37:27 2025 +0200
+
+    dodalem pliki zwrotek i refrenu
+
+diff --git a/zwrotka3.txt b/zwrotka3.txt
+new file mode 100644
+index 0000000..dc898b8
+--- /dev/null
++++ b/zwrotka3.txt
+@@ -0,0 +1,4 @@
++A gdyby tak wszyscy ludzie
++Mogli przeżyć taki jedne dzień
++Gdy wolność wszystkich, wszystkich zbudzi
++I powie: Idźcie tańczyć, to nie sen!
+\ No newline at end of file
+
+Michal@DESKTOP-O89EEFG MINGW64 /c/home/piosenka (master)
+$
