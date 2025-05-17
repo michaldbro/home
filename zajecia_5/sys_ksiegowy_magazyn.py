@@ -59,6 +59,7 @@ while True:
                     czy_sa = int(ilosc22) - ilosc2
                     if czy_sa > 0:
                         produkt2["ilosc"] -= ilosc2
+                        saldo += (cena2*ilosc2)
                         print(f'Sprzedałeś {ilosc2} sztuk towaru')
                         historia_operacji.append(f'Sprzedaż towaru: {nazwa2},{marka2},{ilosc2}')
                         break
@@ -86,6 +87,7 @@ while True:
                 if produkt3.get("nazwa") == nazwa3 and produkt3.get("marka") == marka3: #pobiera wartość dla klucza 'nazwa' ze słownika
                     zla_nazwa = True
                     produkt3["ilosc"] += ilosc3
+                    print(f'Kupiłeś {ilosc3} sztuk towaru')
                     break
             if not zla_nazwa:
                 lista_produktow.append( # .append do listy dodaje kolejny slownik
@@ -94,6 +96,7 @@ while True:
                       "ilosc": ilosc3,
                     }
                 )
+                print(f'Kupiłeś {ilosc3} sztuk towaru')
                 historia_operacji.append(f'Zakup towaru: {nazwa3},{marka3},{ilosc3}')
 
         case "4":
