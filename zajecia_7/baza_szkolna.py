@@ -1,5 +1,3 @@
-
-
 class uczen:
     def __init__(self, imie_nazwisko, jaka_klasa):
         self.imie_nazwisko = imie_nazwisko
@@ -15,13 +13,13 @@ class wychowawca:
         return f"{self.imie_nazwisko} {self.jaka_klasa}"
 
 class nauczyciel:
-    def __init__(self, imie_nazwisko2, jaki_przedmiot2, ktora_klasa2):
+    def __init__(self, imie_nazwisko2, jaki_przedmiot2, ktora_klasa2=None):
         self.imie_nazwisko = imie_nazwisko2
         self.jaki_przedmiot = jaki_przedmiot2
         self.ktora_klasa = ktora_klasa2
 
-    def dodaj_klase(self, ktora_klasa2):
-        self.ktora_klasa.append(ktora_klasa2)
+   # def dodaj_klase(self, ktora_klasa2):
+     #   self.ktora_klasa.append(ktora_klasa2)
 
     def __repr__(self):
         return f"{self.imie_nazwisko} {self.jaki_przedmiot} {self.ktora_klasa}"
@@ -30,7 +28,8 @@ szkola = {
     "uczniowie": [
         uczen("Adam Nowak", "1A"),
         uczen("Piotr Adamek", "3B"),
-        uczen("Marcin Kwiatek", "2C")
+        uczen("Marcin Kwiatek", "1A")
+        uczen("Aleksander Bok", "2C")
     ],
     "wychowawca": [
         wychowawca("Piotr Kowalski", "1A"),
@@ -44,6 +43,21 @@ szkola = {
     ]
 }
 
+def wyszukaj_ucznia(wyb_klasy):
+    uczniowie1 =[]
+    for klasa_szukaj in szkola.get("uczniowie"):
+        if klasa_szukaj.jaka_klasa == wyb_klasy:
+            uczniowie1.append(klasa_szukaj)
+    return uczniowie1
+
+def wyszukaj_wychowawce(wyb_klasy1):
+    wychowawca1 =[]
+    for klasa_szukaj in szkola.get("wychowawca"):
+        if klasa_szukaj.jaka_klasa == wyb_klasy1:
+            wychowawca1.append(klasa_szukaj)
+    return wychowawca1
+
+
 #-----------------------------------------------------------------------------
 while True:
     print('*****')
@@ -55,26 +69,26 @@ while True:
         case "1":
             print('Proces tworzenia użytkownika\n ')
             dodaj = int(input('Podaj (numer) kogo mam dodać:\n1. Uczeń\n2. Nauczyciel\n3. Wychowawca\n Twój wybór: '))
-            if dodaj == 1:
+            if dodaj == 1: #Uczen
                 imie_nazwisko = input('Podaj Imię i Nazwisko: ')
                 jaka_klasa = input ('Podaj nazwę klasy: ')
                 nowy_uczen = uczen(imie_nazwisko, jaka_klasa)
                 szkola["uczniowie"].append(nowy_uczen)
                 print(f"Dodałeś ucznia: {nowy_uczen}")
-            elif dodaj == 2:
-                imie_nazwisko = input('Podaj Imię i Nazwisko Nauczyciela: ')
-                jaka_klasa = input('Podaj nazwę prowadzonej klasy: ')
-                nowy_wych = wychowawca(imie_nazwisko, jaka_klasa)
-                szkola["wychowawca"].append(nowy_wych)
-                print(f"Dodałeś wychowawcę: {nowy_wych}")
-            elif dodaj ==3:
+            elif dodaj == 3: #Wychowawca
                 imie_nazwisko = input('Podaj Imię i Nazwisko Wychowawcy: ')
+                jaka_klasa1 = input('Podaj nazwę prowadzonej klasy: ')
+                nowy_wych = wychowawca(imie_nazwisko, jaka_klasa1)
+                szkola["wychowawca"].append(nowy_wych)
+                print(f"Dodałeś Wychowawcę: {nowy_wych}")
+            elif dodaj == 2: #Nauczyciel
+                imie_nazwisko = input('Podaj Imię i Nazwisko Nauczyciela: ')
                 przedmiot = input('Podaj nazwę przedmiotu prowadzącego: ')
                 lista_klas = []
                 while True:
-                    jaka_klasa = input('Podaj nazwę klasy: ')
-                    if jaka_klasa: #if sprawdza, czy podana zmienna nie jest pusta
-                        lista_klas.append(jaka_klasa)
+                    ktora_klasa2 = input('Podaj nazwę klasy: ')
+                    if ktora_klasa2: #if "bez warunku" sprawdza, czy podana zmienna nie jest pusta
+                        lista_klas.append(ktora_klasa2)
                     else:
                         break
                 nowa_klasa = nauczyciel(imie_nazwisko, przedmiot, lista_klas)
@@ -91,6 +105,9 @@ while True:
             match zarzadzanie:
                 case "1":
                     wyb_klasy = input('Podaj numer klasy: ')
-
+                    wyszukaj_u = wyszukaj_ucznia(wyb_klasy)
+                    wyszukaj_w = wyszukaj_wychowawce(wyb_klasy)
+                    print(f"Uczniowie: {wyszukaj_u}")
+                    print(f"Wychowawca: {wyszukaj_w}")
         case "3":
             break
