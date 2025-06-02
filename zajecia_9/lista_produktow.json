@@ -1,0 +1,22 @@
+[
+    {
+        "nazwa": "procesor",
+        "marka": "intel",
+        "ilosc": 20
+    },
+    {
+        "nazwa": "plyta glowna",
+        "marka": "msi",
+        "ilosc": 5
+    },
+    {
+        "nazwa": "karta graficzna",
+        "marka": "radeon",
+        "ilosc": 5
+    },
+    {
+        "nazwa": "procesor",
+        "marka": "amd",
+        "ilosc": 2
+    }
+]
