@@ -14,7 +14,7 @@ class FileHandler:
         with open(self.file, "w") as file:
             file.write(json.dumps(self.data, indent=4))
 
-    def search_in_file(self, opad):
+    def search_in_file(self, opad, city):
         for opad_mm in self.data:
-            if opad_mm.get("rain_sum") == opad:
-                return opad_mm
+            if opad_mm.get("rain") == opad and opad_mm.get("city") == city:
+               return opad_mm

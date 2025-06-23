@@ -1,7 +1,62 @@
 [
     {
-        "rain": [
-            0.0
-        ]
+        "city": "Warsaw",
+        "rain": 1.7
+    },
+    {
+        "city": "Warsaw",
+        "rain": 1.9
+    },
+    {
+        "city": "Warsaw",
+        "rain": 1.2
+    },
+    {
+        "city": "Warszawa",
+        "rain": 6.0
+    },
+    {
+        "city": "Warszawa",
+        "rain": 0.0
+    },
+    {
+        "city": "Moskwa",
+        "rain": 0.6
+    },
+    {
+        "city": "Warszawa",
+        "rain": 13.5
+    },
+    {
+        "city": "Warszawa",
+        "rain": 1.0
+    },
+    {
+        "city": "Warszawa",
+        "rain": 0.5
+    },
+    {
+        "city": "Warszawa",
+        "rain": 0.3
+    },
+    {
+        "city": "Warszawa",
+        "rain": null
+    },
+    {
+        "city": "szczecin",
+        "rain": 2.5
+    },
+    {
+        "city": "Moskwa",
+        "rain": 0.7
+    },
+    {
+        "city": "Berlin",
+        "rain": 0.0
+    },
+    {
+        "city": "Budapeszt",
+        "rain": 0.0
     }
 ]
