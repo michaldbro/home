@@ -58,5 +58,13 @@
     {
         "city": "Budapeszt",
         "rain": 0.0
+    },
+    {
+        "city": "Zakopane",
+        "rain": 0.5
+    },
+    {
+        "city": "Zakopane",
+        "rain": null
     }
 ]
