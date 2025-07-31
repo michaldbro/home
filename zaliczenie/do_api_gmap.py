@@ -1,5 +1,3 @@
-#AIzaSyAbQ49OU6RokvdIz7AypNVbBEkUK_vVzfQ
-
 import requests
 
 def get_place_coordinates(location_name, api_key):
@@ -26,7 +24,7 @@ def get_local_attractions(lat, lng, api_key, radius=5000):
     return [(place['name'], place.get('vicinity')) for place in results]
 
 # 🔑 Twój klucz API
-API_KEY = "AIzaSyAbQ49OU6RokvdIz7AypNVbBEkUK_vVzfQ"
+API_KEY = "api_key"
 
 # 🎯 Nazwa miejscowości
 location_name = "Kraków, Polska"
