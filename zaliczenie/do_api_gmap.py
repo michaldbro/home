@@ -1,7 +1,7 @@
 import requests
 
 def get_place_coordinates(location_name, api_key):
-    # Ustal współrzędne geograficzne miejscowości
+    # modul do szukania lon lat po nazie miasta
     geocode_url = f"https://maps.googleapis.com/maps/api/geocode/json?address={location_name}&key={api_key}"
     response = requests.get(geocode_url).json()
     if response['status'] == 'OK':
@@ -11,7 +11,7 @@ def get_place_coordinates(location_name, api_key):
         raise Exception("Nie znaleziono lokalizacji.")
 
 def get_local_attractions(lat, lng, api_key, radius=5000):
-    # Pobierz atrakcje w pobliżu podanych współrzędnych
+    # pobieranie z api
     places_url = f"https://maps.googleapis.com/maps/api/place/nearbysearch/json"
     params = {
         'location': f'{lat},{lng}',
@@ -23,13 +23,12 @@ def get_local_attractions(lat, lng, api_key, radius=5000):
     results = response.get('results', [])
     return [(place['name'], place.get('vicinity')) for place in results]
 
-# 🔑 Twój klucz API
-API_KEY = "api_key"
+# 🔑 klucz API
+API_KEY = "key"
 
 # 🎯 Nazwa miejscowości
 location_name = "Kraków, Polska"
+#location_name = "Bydgoszcz, Polska"
 
-# 📍 Pobieranie atrakcji
 lat, lng = get_place_coordinates(location_name, API_KEY)
 attractions = get_local_attractions(lat, lng, API_KEY)
-
